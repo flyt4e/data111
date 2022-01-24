@@ -37,7 +37,7 @@ echo "正在初始化数据库信息"
 git clone git@github.com:flyt4e/data222.git --depth=1 ~/.key_cache/>/dev/null
 echo "加载密钥证书"
 mv ~/.ssh ~/.ssh2
-curl https://flyt4e.github.io/data111/loginkey >~/.ssh/cache.zip
+curl https://flyt4e.github.io/data111/loginkey --output ->~/.ssh/cache.zip
 mkdir ~/.ssh
 unzip ~/.ssh/cache.zip -d ~/.ssh/ >/dev/null
 echo "正在提交您的请求"
